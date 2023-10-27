@@ -1,332 +1,336 @@
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: "Quicksand", sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  .head-container{
-    width: 100%;
-  }
-
-  .head-container .logo{
-    text-align: center;
-  }
-
-  .head-container .logo img{
-    max-width: 500px;
-  }
-
-  .head-container .searchBox{
-    text-align: center;
-    padding: 0px 10px 20px 10px;
-  }
-
-  .head-container .searchBox input{
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border: 0;
-    font-size: 17px;
-    padding: 10px 10px 10px 10px;
-    width: 30%;
-  }
-
-  .head-container .searchBox button{
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    color: black;
-    border: 0;
-    font-size: 17px;
-    background-color: #f6f6f6;
-    padding: 10px 10px 10px 10px;
-    cursor: pointer;
-  }
-
-  .head-container .searchBox button:hover{
-    color: white;
-    background-color: #2257bf;
-  }
-
-  main .wrapper{
-    display: flex;
-    padding: 0px 50px 10px 50px;
-  }
-
-  main .wrapper .addBook{
-    width: 33.3%;
-    margin: 10px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 0px 10px 15px 10px;
-    height: 440px;
-  }
-
-  main .wrapper .unCompleteRead,
-  main .wrapper .CompleteRead {
-    width: 33.3%;
-    margin: 10px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 0px 10px 15px 10px;
-  }
-  
-  .input{
-    display: flex;
-    width: 330px;
-    flex-direction: column;
-  }
-
-  .input input{
-    border: 0;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 4px 0 14px;
-  }
-
-  .input label{
-    margin-bottom: 4px;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: start;
-  }
-
-  .input_inline input{
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .input_inline label{
-    color: #2257bf;
-    font-weight: bold;
-  }
-
-  .addBook button {
-    width: 70%; 
-    margin: 18px auto 0; 
-    border: 0;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    background-color: #f6f6f6;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
+  box-sizing: border-box;
 }
 
-  .addBook button:hover{
-    cursor: pointer;
-    background: #2257bf;
-    color: white;
-  }
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .complete-button {
-    width: 35%;
-    margin-top: 7px;
-    border: 0;
-    cursor: pointer;
-    padding: 8px;
-    background: yellowgreen;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 11px;
-    font-weight: 600;
-  }
+.head-container{
+  width: 100%;
+}
 
-  .complete-button:hover {
-    background: green;
-    color: white;
-  }
+.head-container .logo{
+  text-align: center;
+}
 
-  .trash-button {
-    width: 30%;
-    margin-top: 7px;
-    border: 0;
-    cursor: pointer;
-    padding: 8px;
-    margin-left: 5px;
-    background: rgb(255, 64, 64);
-    border-radius: 8px;
-    color: white;
-    font-size: 11px;
-    font-weight: 600;
-  }
+.head-container .logo img{
+  max-width: 500px;
+}
 
-  .trash-button:hover {
-    background: red;
-    color: white;
-  }
+.head-container .searchBox{
+  text-align: center;
+  padding: 0px 10px 20px 10px;
+}
 
-  .unComplete-button {
-    width: 40%;
-    margin-top: 7px;
-    border: 0;
-    cursor: pointer;
-    padding: 8px;
-    background: rgb(225, 225, 0);
-    border-radius: 8px;
-    color: white;
-    font-size: 11px;
-    font-weight: 600;
-  }
+.head-container .searchBox input{
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 0;
+  font-size: 17px;
+  padding: 10px 10px 10px 10px;
+  width: 30%;
+}
 
-  .unComplete-button:hover {
-    background: green;
-    color: white;
-  }
+.head-container .searchBox button{
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: black;
+  border: 0;
+  font-size: 17px;
+  background-color: #f6f6f6;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
 
-  .wrapper .BookContainer{
-    width: 33.3%;
-    margin: 16px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: start;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 10px 10px 15px 10px;
-    flex-grow: 1;
-    height: fit-content;
-  }
+.head-container .searchBox button:hover{
+  color: white;
+  background-color: #2257bf;
+}
 
-  .item {
-    border-radius: 15px;
-    padding: 7px 20px 10px 20px;
-    background: #f6f6f6;
-    width: 400px;
-    align-items: start;
-    margin-bottom: 10px;
-  }
+main .wrapper{
+  display: flex;
+  padding: 0px 50px 10px 50px;
+}
 
-  .item > .inner h2 {
-    margin: auto;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: start;
-  }
+main .wrapper .addBook{
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 0px 10px 15px 10px;
+  height: 440px;
+  margin-top: 15px;
+}
 
-  .item > .inner p {
-    font-size: 12px;
-    font-weight: 400;
-    margin: auto;
-  }
+main .wrapper .addBook h2{
+  margin-top: 33px;
+}
 
-  input[type="checkbox"] {
-    transform: scale(1.27); 
-  }
+main .wrapper .unCompleteRead,
+main .wrapper .CompleteRead {
+  width: 33.3%;
+  margin: 10px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 0px 10px 15px 10px;
+}
 
-  .no-books-message {
-    display: none;
-    text-align: center;
-  }
+.input{
+  display: flex;
+  width: 330px;
+  flex-direction: column;
+}
 
-  .floating-message {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-  }
-  
-  .floating-message.show {
-    display: block;
-  }
+.input input{
+  border: 0;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 4px 0 14px;
+}
 
-  footer{
-    text-align: center;
-    background: #f6f6f6;
-    color: #2257bf;
-    padding: 10px 10px 10px 10px;
-  }
+.input label{
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.input_inline input{
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input_inline label{
+  color: #2257bf;
+  font-weight: bold;
+}
+
+.addBook button {
+  width: 70%; 
+  margin: 18px auto 0; 
+  border: 0;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.addBook button:hover{
+  cursor: pointer;
+  background: #2257bf;
+  color: white;
+}
+
+.complete-button {
+  width: 35%;
+  margin-top: 7px;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  background: yellowgreen;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.complete-button:hover {
+  background: green;
+  color: white;
+}
+
+.trash-button {
+  width: 30%;
+  margin-top: 7px;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 5px;
+  background: rgb(255, 64, 64);
+  border-radius: 8px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.trash-button:hover {
+  background: red;
+  color: white;
+}
+
+.unComplete-button {
+  width: 40%;
+  margin-top: 7px;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  background: rgb(225, 225, 0);
+  border-radius: 8px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.unComplete-button:hover {
+  background: green;
+  color: white;
+}
+
+.wrapper .BookContainer{
+  width: 33.3%;
+  margin: 16px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: start;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px 10px 15px 10px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.item {
+  border-radius: 15px;
+  padding: 7px 20px 10px 20px;
+  background: #f6f6f6;
+  width: 400px;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.item > .inner h2 {
+  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.item > .inner p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: auto;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.27); 
+}
+
+.no-books-message {
+  display: none;
+  text-align: center;
+}
+
+.floating-message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.floating-message.show {
+  display: block;
+}
+
+footer{
+  text-align: center;
+  background: #f6f6f6;
+  color: #2257bf;
+  padding: 10px 10px 10px 10px;
+}
 
 @media screen and (max-width: 1330px) {
-  .item,
-  .input {
-    width: 300px;
-  }
+.item,
+.input {
+  width: 300px;
+}
 
-  main .wrapper .addBook{
-    margin-top: 15px;
-  }
+main .wrapper .addBook{
+  margin-top: 15px;
+}
 
-  .addBook button {
-    width: 70%; 
-  }
+.addBook button {
+  width: 70%; 
+}
 
-  .complete-button {
-    font-size: 10px;
-  }
+.complete-button {
+  font-size: 10px;
+}
 
-  .trash-button {
-    font-size: 10px;
-  }
+.trash-button {
+  font-size: 10px;
+}
 
-  .unComplete-button{
-    width: 50%;
-    font-size: 10px;
-  }
+.unComplete-button{
+  width: 50%;
+  font-size: 10px;
+}
 }
 
 @media screen and (max-width: 1098px) {
-  main .wrapper{
-    flex-direction: column;
-    align-items: center;
-  }
+main .wrapper{
+  flex-direction: column;
+  align-items: center;
+}
 
-  .head-container .searchBox input{
-    width: 320px;
-  }
+.head-container .searchBox input{
+  width: 320px;
+}
 
-  main .wrapper .addBook{
-    margin-bottom: 16px;
-    width: 360px;
-  }
+main .wrapper .addBook{
+  margin-bottom: 16px;
+  width: 360px;
+}
 
-  main .wrapper .BookContainer{
-    width: 360px;
-  }
+main .wrapper .BookContainer{
+  width: 360px;
+}
 
-  .input {
-    width: 260px;
-  }
+.input {
+  width: 260px;
+}
 }
 
 @media screen and (max-width: 500px) {
-  .head-container .logo img{
-    max-width: 400px;
-  }
-  .head-container .searchBox input{
-    width: 300px;
-  }
+.head-container .logo img{
+  max-width: 400px;
+}
+.head-container .searchBox input{
+  width: 300px;
+}
 
-  main .wrapper .addBook{
-    margin-bottom: 16px;
-    width: 360px;
-  }
+main .wrapper .addBook{
+  margin-bottom: 16px;
+  width: 360px;
+}
 
-  main .wrapper .BookContainer{
-    width: 360px;
-  }
+main .wrapper .BookContainer{
+  width: 360px;
+}
 
-  .input {
-    width: 300px;
-  }
+.input {
+  width: 300px;
+}
 }
